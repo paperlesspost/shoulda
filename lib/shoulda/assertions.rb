@@ -51,12 +51,12 @@ module Shoulda # :nodoc:
       end
 
       if matcher.matches?(target)
-        assert_block { true }
+        assert true
         if options[:message]
           assert_match options[:message], matcher.negative_failure_message
         end
       else
-        assert_block(matcher.failure_message) { false }
+        assert false, matcher.failure_message
       end
     end
 
@@ -67,12 +67,12 @@ module Shoulda # :nodoc:
       end
 
       unless matcher.matches?(target)
-        assert_block { true }
+        assert true
         if options[:message]
           assert_match options[:message], matcher.failure_message
         end
       else
-        assert_block(matcher.negative_failure_message) { false }
+        assert false, matcher.negative_failure_message, false
       end
     end
   end
