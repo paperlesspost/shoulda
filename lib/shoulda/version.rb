@@ -1,3 +1,3 @@
 module Shoulda
-  VERSION = "2.11.5.paperless"
+  VERSION = "2.11.6.paperless"
 end
