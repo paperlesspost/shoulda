@@ -2,14 +2,8 @@ require 'shoulda'
 require 'shoulda/action_controller/matchers'
 require 'shoulda/action_controller/macros'
 
-module Test # :nodoc: all
-  module Unit
-    class TestCase
-      include Shoulda::ActionController::Matchers
-      extend Shoulda::ActionController::Macros
-    end
-  end
-end
+ActiveSupport::TestCase.send :include, Shoulda::ActionController::Matchers
+ActiveSupport::TestCase.send :extend, Shoulda::ActionController::Macros
 
 require 'shoulda/active_record/assertions'
 require 'shoulda/action_mailer/assertions'
