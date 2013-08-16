@@ -80,7 +80,7 @@ module Shoulda # :nodoc:
           rescue ::ActionController::RoutingError => error
             @failure_message = error.message
             false
-          rescue Test::Unit::AssertionFailedError => error
+          rescue MiniTest::Assertion => error
             @failure_message = error.message
             false
           end
