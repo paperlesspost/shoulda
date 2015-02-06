@@ -1,3 +1,5 @@
+**Note that this fork is not currently maintained.  Please refer to [thoughtbot/shoulda](https://github.com/thoughtbot/shoulda)**
+
 # shoulda [![Build Status](https://secure.travis-ci.org/thoughtbot/shoulda.png)](http://travis-ci.org/thoughtbot/shoulda)
 
 The shoulda gem is a meta gem with two dependencies:
